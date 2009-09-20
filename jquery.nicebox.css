@@ -1,0 +1,80 @@
+#niceboxOverlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: #333;
+	-moz-opacity: .50;
+	filter: alpha(opacity=50);
+	opacity: .50;
+	z-index: 1000;
+}
+
+#niceboxIframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 2000px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+}
+
+#niceboxPopUp {
+	display: block;
+	position: fixed;
+	border: 10px solid #fff;
+	background: #eee;
+	z-index: 1001;
+}
+
+#niceboxInfo {
+	background: #fff;
+	border-top: 10px solid #fff;
+}
+
+#niceboxControls {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#niceboxControls a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#niceboxLoading {
+	display: block;
+	position: fixed;
+	background: url(loading.gif) no-repeat center center;	
+	width: 100px;
+	height: 100px;
+	z-index: 1001;
+}
+
+#niceboxLoading .niceboxReplace {
+	background: #ddd url(loading.gif) no-repeat center center;	
+}
+
+* html #niceboxOverlay {
+	position: absolute;
+	height: 2000px;
+	zoom: 1;
+}
+
+* html #niceboxPopUp {
+	position: absolute;
+	zoom: 1;
+}
+
+* html #niceboxLoading {
+	position: absolute;
+	zoom: 1;
+}

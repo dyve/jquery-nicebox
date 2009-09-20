@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Nicebox - a customizable jQuery modal popup plugin with image, AJAX, iframe and gallery support</title>
+	<link rel="stylesheet" type="text/css" href="jquery.nicebox.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.nicebox.js"></script>
+    <script type="text/javascript">
+
+$(function() {
+	$("a.nicebox").nicebox({ title: makeTitle });
+});
+
+function makeTitle(options) {
+	return 'Function for title';
+}
+
+	</script>
+</head>
+
+<body>
+    <h1>Nicebox</h1>
+ 	<h2>a customizable jQuery modal popup plugin with image, AJAX, iframe and gallery support</h2>
+	
+	<form>
+
+	<fieldset>
+		<legend>Some items to test the overlay</legend>
+		<select><option value="1">Hello world</option></select>
+	</fieldset>
+	</form>
+	
+	<p><a class="nicebox" rel="Demo;title=%3Ca%20href%3D%22http%3A%2F%2Fwww.w3schools.com%22%3Ew3schools%3C%2Fa%3Eoink" href="img/natrix.jpg" title="Natrix natrix">Natrix natrix</a></p>
+	<p><a class="nicebox" rel="Demo" href="img/cinclus.jpg">Cinclus cinclus</a></p>
+	<p><a class="nicebox" rel="Demo;width=600;height=400" href="http://www.google.com" title="Cinclus cinclus">An iframe will open</a></p>
+
+	<div style="width: 500px; height: 500px; background: silver">&nbsp;</div>
+
+</body>
+
+</html>
