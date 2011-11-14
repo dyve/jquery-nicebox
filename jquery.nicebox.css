@@ -79,8 +79,10 @@
 	zoom: 1;
 }
 
-// Hack for IOS: fixed position is relative with respect to viewport. 
-// This is not what we want, replace this by absolute position (relative to page)
-.ios #niceboxPopUp, .ios #niceboxOverlay, .ios #niceboxLoading {
+/*
+Hack for IOS: fixed position is relative with respect to viewport.
+This is not what we want, replace this by absolute position (relative to page)
+*/
+.niceboxAbsolute #niceboxPopUp, .niceboxAbsolute #niceboxOverlay, .niceboxAbsolute #niceboxLoading {
 	position: absolute;
 }

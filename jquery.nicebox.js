@@ -50,12 +50,10 @@
 
 		// Detect IOS
 		nicebox.ios = /(iPhone|iPod|iPad)/.test(window.navigator.userAgent);
-		if (nicebox.ios) {
-			nicebox.dom.$body.addClass("ios");
-		}
 
 		// Detect IE6 using own technique instead of deprecated jQuery.browser
-		nicebox.msie6 = window.XMLHttpRequest === undefined && ActiveXObject !== undefined;
+		nicebox.msie6 = !nicebox.ios && window.XMLHttpRequest === undefined && ActiveXObject !== undefined;
+
 		// Add fixes for IE6 -- IE6 has and always will have issues though
 		if (nicebox.msie6) {
 			nicebox.dom.$iframe = $('<iframe id="niceboxIframe"></iframe>').hide();
@@ -69,6 +67,11 @@
 				}				
 			}
 		}
+
+        // Use absolute instead of fixed -- see CSS
+        if (nicebox.ios) {
+            nicebox.dom.$body.addClass("niceboxAbsolute");
+        }
 
 		// The overlay
 		nicebox.dom.$overlay = $('<div id="niceboxOverlay">&nbsp;</div>').hide();
