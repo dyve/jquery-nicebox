@@ -1,0 +1,39 @@
+{
+    "name": "nicebox",
+    "version": "3.0.0",
+    "title": "jQuery Nicebox",
+    "author": {
+        "name": "Dylan Verheul",
+        "url": "http://github.com/dyve",
+        "email": "dylan@dyve.net"
+    },
+    "licenses": [
+        {
+            "type": "MIT"
+        },
+        {
+            "type": "GPL"
+        },
+        {
+            "type": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1"
+    },
+    "description": "Creating a modal dialog with local or remote content",
+    "keywords": [
+        "nicebox",
+        "modal",
+        "dialog",
+        "lightbox"
+    ],
+    "homepage": "https://github.com/dyve/jquery-nicebox",
+    "contributors": [
+        {
+            "name": "Sjaak Schilperoort",
+            "email": "sjaak@xs4all.nl"
+        }
+    ]
+}
